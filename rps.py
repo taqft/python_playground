@@ -1,12 +1,12 @@
 from random import randint
 
-#create list of play options
+# create list of play options
 choice = ["rock", "paper", "scissors"]
 
-#give the computer a choice
-computer = choice[randint(0,2)]
+# give the computer a choice
+computer = choice[randint(0, 2)]
 
-#the challenger enters the ring
+# the challenger enters the ring
 player = False
 
 while player == False:
@@ -33,9 +33,8 @@ while player == False:
 
     rematch = input("Try again?(Y/N) ")
     if rematch.casefold() == "y":
-        #reach for the sky
+        # reach for the sky
         player = False
-        computer = choice[randint(0,2)]
+        computer = choice[randint(0, 2)]
     else:
         print("Thanks for playing!")
-        
